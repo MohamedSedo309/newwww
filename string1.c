@@ -59,19 +59,19 @@ void print_string(char *str)
 		return;
 	while (str[i] != '\0')
 	{
-		print_char(str[i]);
+		_putchar(str[i]);
 		i++;
 	}
 }
 
 /**
- * print_char - writes the character c to stdout
+ * _putchar - writes the character c to stdout
  * @c: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int print_char(char c)
+int _putchar(char c)
 {
 	static int i;
 	static char buf[WRITE_BUF_SIZE];
