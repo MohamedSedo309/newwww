@@ -139,7 +139,7 @@ char *concatenate_strings(char *, char *);
 char *copy_string(char *, char *);
 char *duplicate_string(const char *);
 void print_string(char *);
-int print_char(char);
+int _putchar(char);
 
 /* toem_exits.c */
 char *copy_string2(char *, char *, int);
