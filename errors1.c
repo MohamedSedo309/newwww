@@ -55,7 +55,7 @@ void print_e_message(infooo *info, char *estr)
  */
 int print_dec(int input, int fd)
 {
-	int (*__putchar)(char) = print_char;
+	int (*__putchar)(char) = _putchar;
 	int i, count = 0;
 	unsigned int _abs_, current;
 
