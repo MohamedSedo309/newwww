@@ -57,10 +57,10 @@ int change_dirr(infooo *info)
 		if (!get_enviroment(info, "OLDPWD="))
 		{
 			print_string(s);
-			print_char('\n');
+			_putchar('\n');
 			return (1);
 		}
-		print_string(get_enviroment(info, "OLDPWD=")), print_char('\n');
+		print_string(get_enviroment(info, "OLDPWD=")), _putchar('\n');
 		chdir_ret = /* TODO: what should this be? */
 			chdir((dir = get_enviroment(info, "OLDPWD=")) ? dir : "/");
 	}
