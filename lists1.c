@@ -68,8 +68,8 @@ size_t print_list_s(const list_s *h)
 	while (h)
 	{
 		print_string(conv_num(h->num, 10, 0));
-		print_char(':');
-		print_char(' ');
+		_putchar(':');
+		_putchar(' ');
 		print_string(h->str ? h->str : "(nil)");
 		print_string("\n");
 		h = h->next;
