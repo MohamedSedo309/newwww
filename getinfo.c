@@ -68,6 +68,6 @@ void delete_info_all(infooo *info, int all)
 		free_buff((void **)info->cmd_buffer);
 		if (info->readfile > 2)
 			close(info->readfile);
-		print_char(BUF_FLUSH);
+		_putchar(BUF_FLUSH);
 	}
 }
