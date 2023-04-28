@@ -27,7 +27,7 @@ int hsh(infooo *info, char **av)
 				find_cmmd(info);
 		}
 		else if (is_interactive(info))
-			print_char('\n');
+			_putchar('\n');
 		delete_info_all(info, 0);
 	}
 	print_hiss(info);
